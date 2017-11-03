@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+import os
+
+from twilio.rest import Client
+
+account_sid = os.environ["TWILIO_ACCOUNT_SID"]
+auth_token = os.environ["TWILIO_AUTH_TOKEN"]
+
+client = Client(account_sid, auth_token)
+
+]]></content>
+    <tabTrigger>twiliopython</tabTrigger>
+    <scope>source.python</scope>
+    <description>
+        This snippet will generate boilerplate code for Twilio's Python helper
+        library. It will import the necessary modules and instantiate a Client
+        object. It also reinforces the best practice of storing your account
+        credentials as environment variables.
+    </description>
+</snippet>
